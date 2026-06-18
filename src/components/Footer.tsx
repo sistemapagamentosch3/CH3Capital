@@ -27,17 +27,20 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col justify-center">
-            <div className="mb-10 flex items-center gap-4">
-              <img 
-                src="/logo.png" 
-                alt="CH3 Capital Logo" 
-                className="h-14 md:h-16 w-auto object-contain drop-shadow-md"
-              />
-              <div>
-                <h2 className="text-3xl font-bold tracking-tight text-brand-text mb-1">
+            <div className="mb-10 flex items-center gap-4 group cursor-default">
+              <div className="relative">
+                <div className="absolute -inset-2 bg-gradient-to-r from-brand-accent/40 to-yellow-600/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                <img 
+                  src="/logo.png" 
+                  alt="CH3 Capital Logo" 
+                  className="relative h-14 md:h-16 w-auto object-contain drop-shadow-lg transition-transform duration-500 group-hover:scale-[1.03]"
+                />
+              </div>
+              <div className="flex flex-col">
+                <h2 className="text-3xl md:text-4xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-brand-text via-brand-text to-brand-muted/70 drop-shadow-sm mb-0.5">
                   CH3
                 </h2>
-                <p className="text-sm font-medium text-brand-muted tracking-widest uppercase font-mono">
+                <p className="text-xs font-bold text-brand-accent tracking-[0.3em] uppercase">
                   Capital
                 </p>
               </div>

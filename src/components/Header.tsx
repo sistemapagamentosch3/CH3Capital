@@ -30,15 +30,23 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <img 
-            src="/logo.png" 
-            alt="CH3 Capital Logo" 
-            className="h-10 md:h-12 w-auto object-contain drop-shadow-md"
-          />
-          <span className="text-xl md:text-2xl font-bold tracking-tight text-brand-text">
-            CH3
-            <span className="text-brand-muted text-sm tracking-widest uppercase ml-2 hidden sm:inline-block">Capital</span>
-          </span>
+          <div className="relative">
+            <div className="absolute -inset-2 bg-gradient-to-r from-brand-accent/40 to-yellow-600/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            <img 
+              src="/logo.png" 
+              alt="CH3 Capital Logo" 
+              className="relative h-10 md:h-12 w-auto object-contain drop-shadow-lg transition-transform duration-500 group-hover:scale-[1.03]"
+            />
+          </div>
+          
+          <div className="flex flex-col sm:flex-row sm:items-baseline">
+            <span className="text-2xl md:text-3xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-brand-text via-brand-text to-brand-muted/70 drop-shadow-sm">
+              CH3
+            </span>
+            <span className="text-[10px] sm:text-xs font-bold tracking-[0.3em] uppercase text-brand-accent sm:ml-3">
+              Capital
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
