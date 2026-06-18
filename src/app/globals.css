@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  
+  --color-background: #09090b; /* fundo bem escuro, quase preto */
+  --color-foreground: #f4f4f5; /* texto claro */
+
+  --color-brand-base: #09090b;
+  --color-brand-surface: #18181b; /* cinza escuro para cards */
+  --color-brand-surface-hover: #27272a;
+  
+  --color-brand-accent: #10b981; /* Verde esmeralda (energia, aprovação) */
+  --color-brand-accent-hover: #059669;
+
+  --color-brand-text: #f4f4f5; /* Títulos */
+  --color-brand-muted: #a1a1aa; /* Textos secundários */
+  --color-brand-border: #27272a; /* Bordas discretas */
+}
+
+:root {
+  --background: var(--color-brand-base);
+  --foreground: var(--color-brand-text);
+  color-scheme: dark;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@keyframes spotlight {
+  0% { opacity: 0; transform: translate(-72%, -62%) scale(0.5); }
+  100% { opacity: 1; transform: translate(-50%,-40%) scale(1); }
+}
+.animate-spotlight { animation: spotlight 2s ease .75s 1 forwards; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+.animate-marquee { animation: marquee var(--duration) linear infinite; }
+.animate-marquee-vertical { animation: marquee-vertical var(--duration) linear infinite; }
