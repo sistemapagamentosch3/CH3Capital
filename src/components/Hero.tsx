@@ -29,7 +29,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-24 pb-12 bg-brand-base border-b border-brand-border">
+    <section className="relative min-h-screen flex items-center justify-center pt-32 sm:pt-40 pb-16 bg-brand-base border-b border-brand-border">
       {/* Elementos de Fundo com Spotlight */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none bg-brand-base">
         <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="#10b981" />
@@ -52,7 +52,7 @@ export default function Hero() {
 
           <motion.h1 
             variants={itemVariants}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold text-brand-text tracking-tight leading-[1.1] mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-brand-text tracking-tight leading-[1.1] mb-6"
           >
             Precisão e Escalabilidade em <span className="text-brand-accent">Licitações</span>.
           </motion.h1>
@@ -101,7 +101,7 @@ export default function Hero() {
           {/* Dados de credibilidade sólidos e sem glow */}
           <motion.div 
             variants={itemVariants}
-            className="mt-16 pt-8 border-t border-brand-border flex flex-wrap gap-12 text-brand-muted"
+            className="mt-12 sm:mt-16 pt-8 border-t border-brand-border grid grid-cols-2 sm:flex sm:flex-wrap gap-8 sm:gap-12 text-brand-muted"
           >
             <div className="flex flex-col">
               <span className="text-3xl font-bold text-brand-text font-mono">100%</span>

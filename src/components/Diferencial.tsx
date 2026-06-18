@@ -16,7 +16,7 @@ export default function Diferencial() {
   return (
     <section className="py-24 bg-[#09090b] border-y border-brand-border relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -28,7 +28,7 @@ export default function Diferencial() {
               <ShieldAlert size={14} className="text-brand-accent" />
               Filosofia Operacional
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-text mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-brand-text mb-6 leading-tight">
               Operação Robusta: <span className="text-brand-accent block mt-2">Do pregão à entrega final sem gargalos.</span>
             </h2>
             <p className="text-xl text-brand-muted mb-8 leading-relaxed">
