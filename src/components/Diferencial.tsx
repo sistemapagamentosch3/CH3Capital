@@ -44,12 +44,12 @@ export default function Diferencial() {
             className="relative"
           >
             {/* Fading edges for marquee */}
-            <div className="pointer-events-none absolute inset-y-0 left-0 w-1/3 bg-gradient-to-r from-[#09090b] z-10"></div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-[#09090b] z-10"></div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-1/4 md:w-1/3 bg-gradient-to-r from-[#09090b] z-10"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-12 sm:w-1/4 md:w-1/3 bg-gradient-to-l from-[#09090b] z-10"></div>
 
-            <Marquee pauseOnHover className="[--duration:20s]">
+            <Marquee pauseOnHover className="[--duration:20s] py-2">
               {garantias.map((item, idx) => (
-                <div key={idx} className="flex flex-col justify-center bg-brand-surface p-6 border border-brand-border rounded-2xl min-w-[250px] mx-2 h-32">
+                <div key={idx} className="flex flex-col justify-center bg-brand-surface p-6 border border-brand-border rounded-2xl min-w-[260px] sm:min-w-[280px] mx-2 min-h-[8rem]">
                   <div className="flex items-start gap-4">
                     <CheckCircle2 className="text-brand-accent shrink-0 mt-1" size={24} />
                     <div>
