@@ -41,7 +41,7 @@ export default function Diferencial() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative"
+            className="relative w-full max-w-full overflow-hidden"
           >
             {/* Fading edges for marquee */}
             <div className="pointer-events-none absolute inset-y-0 left-0 w-12 sm:w-1/4 md:w-1/3 bg-gradient-to-r from-[#09090b] z-10"></div>
